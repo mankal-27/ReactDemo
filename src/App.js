@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import SayHello, { Hellofn } from './basic/buttonclick';
+import { Helloworldfn } from './basic/helloworld';
+import Greetcls, { Greet } from './basic/greet';
+import ToggleMsgCls from './basic/tooglemsg';
+import ParentToChildArray from './componentCommu/parentochild';
+import ChildToParent from './componentCommu/childtoParent';
+import Mountphase from './lifecycle/mountphase';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> hello react</h1>
+      <Helloworldfn/>
+      <SayHello/>
+      <Hellofn/>
+      <Greetcls name = "kiran" desg = "Developer" />
+      <Greet name="kishan"/>
+      <ToggleMsgCls/>
+      <ParentToChildArray/>
+      <ChildToParent/>
+      <Mountphase/>
     </div>
   );
 }
