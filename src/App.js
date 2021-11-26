@@ -6,6 +6,7 @@ import ToggleMsgCls from './basic/tooglemsg';
 import ParentToChildArray from './componentCommu/parentochild';
 import ChildToParent from './componentCommu/childtoParent';
 import Mountphase from './lifecycle/mountphase';
+import UnMount from './lifecycle/unmount';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <ParentToChildArray/>
       <ChildToParent/>
       <Mountphase/>
+      <UnMount/>
     </div>
   );
 }
